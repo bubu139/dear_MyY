@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/8f62b2625c.js" crossorigin="anonymous"></script>
+    <title>Nhập số</title>
+</head>
+<body>
+   
+    <div>
+        <input type="text" id="username" class="hidden" /><br>
+    </div>
+    <div class="container">
+      </div>
+    <div>
+      <form>
+        <input type="password" id="password" required   /><br>
+      </form>
+    <div class="ear-l"></div>
+    <div class="ear-r"></div>
+
+    <div class="panda-face">
+      <div class="blush-l"></div>
+      <div class="blush-r"></div>
+      <div class="eye-l">
+        <div class="eyeball-l"></div>
+      </div>
+      <div class="eye-r">
+        <div class="eyeball-r"></div>
+      </div>
+      <div class="nose"></div>
+      <div class="mouth"></div>
+    </div>
+    </div>
+      <div>
+        <div class="hand-l"></div>
+        <div class="hand-r"></div>
+      </div>
+    <script src="login.js"></script>
+    <block>
+      <div class="button-container">
+        <button class ="buttons" onclick="appendNumber(1)">1</button>
+        <button class ="buttons" onclick="appendNumber(2)">2</button>
+        <button class ="buttons" onclick="appendNumber(3)">3</button>
+        <button class ="buttons" onclick="appendNumber(4)">4</button>
+        <button class ="buttons"onclick="appendNumber(5)">5</button>
+        <button class ="buttons" onclick="appendNumber(6)">6</button>
+        <button class ="buttons" onclick="appendNumber(7)">7</button>
+        <button class ="buttons" onclick="appendNumber(8)">8</button>
+        <button class ="buttons" onclick="appendNumber(9)">9</button>
+        <button class="button-symbol" onclick="clearinput()"><i class="fa-solid fa-rectangle-xmark"></i></button>
+        <button class ="buttons" onclick="appendNumber(0)">0</button>
+        <button class="button-symbol" onclick="check_input()"><i class="fa-solid fa-circle-check"></i></button>
+        </div>
+      </block>
+    <block-img>
+      <img src="20250828_185750030.jpg" class="img-memories">
+    </block-img>
+   <!-- <div class ="btn-content">
+    <button class="btn-34"><i class="fa-solid fa-lightbulb"></i></button>
+   </div> -->
+</body>
+</html>

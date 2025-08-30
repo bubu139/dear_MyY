@@ -1,0 +1,245 @@
+body,
+html{
+      margin: 0;
+      padding: 0;
+      height: 100%;
+}
+
+svg {
+      display: block;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    cursor: pointer;
+  }
+  
+::-webkit-scrollbar-track {
+    background: rgb(74, 74, 74);
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 205, 246);
+    border-radius: 10px;
+    cursor: pointer;
+}
+  
+
+.scrollElement {
+      position: absolute;
+      height: 6000px;
+      width: 100px;
+      top: 0;
+      z-index: 0;
+}
+
+  .btn {
+      position: fixed;
+       bottom: 5%;
+      right: 0px;
+      transform: translateX(-50%);
+      border: 1px solid #fff;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      padding: 0.5rem 0.7em;
+      background-color: transparent;
+      color: #ffffff;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      cursor: pointer;
+      transition: all .3s;
+      z-index: 11;
+  }
+
+  .btn_works {
+      left: 100px;
+      right: unset;
+      text-decoration: none;
+       opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+
+  .btn:hover {
+      background: #ffffff;
+      color: #1B1734;
+  }
+
+/*.btn_1 {
+  position: fixed;
+  bottom: 10%;
+  right: 20px;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+*/
+/* jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj */
+  #extra-buttons {
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    z-index: 1001;
+  }
+
+  #extra-buttons button {
+    position: relative;
+    /* min-width: 50px; 
+    height: 80px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 4rem;
+      padding: 0.5 rem 2rem;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease; */
+  
+     
+}
+
+/* #extra-buttons button:hover {
+    background-color: #ffffff;
+    color: #1B1734;
+} */
+
+/* .btn_new {
+  position: relative;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.7em;
+  background-color: transparent;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  transition: all .3s;
+  z-index: 11;
+} */
+
+.btnz,
+.btnz *,
+.btnz :after,
+.btnz :before,
+.btnz:after,
+.btnz:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btnz {
+  -webkit-tap-highlight-color: transparent;
+  -webket-appearance: button;
+  background-color: transparent;
+  background-image: :none;
+  color: #fff;
+  cursor: pointer;
+  min-width: 50px;
+  height: 80px;
+  font-size: 4rem;
+  line-height: 1.5;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+
+}
+
+.btnz {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0px 2rem;
+  position: relative;  
+  place-items: center; 
+}
+
+.btnz:disabled {
+  cursor: default;
+}
+
+.btnz :-moz-focusring {
+  outline: auto;
+}
+
+.btnz svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btnz [hidden] {
+  display: none;
+}
+
+/* .btnz span {
+  mix-blend-mode: difference;
+} */
+.btnz:before {
+  aspect-ratio: 1;
+  background: 
+#fff;
+  border-radius: 50%;
+  content: "";
+  left: -100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) scale(1);
+  transform-origin: left center;
+  transition: transform 0.2s ease;
+  width: 100%;
+}
+.btnz:hover:before {
+  transform: translateY(-50%) scale(2);
+}
+
+
+
+
+/* jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj */
+/* .btn_new_1 {
+      position: fixed;
+      top: 15%;
+      left:10%;
+      transform: translateX(-50%);
+  }
+
+.btn_new_2 {
+      position: fixed;
+      top: 15%;
+      left:22%;
+      transform: translateX(-50%);
+  }
+
+  .btn_new_3 {
+      position: fixed;
+      top: 15%;
+      left:34%;
+      transform: translateX(-50%);
+  } */
+
+
+
+
+.fade-in {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
