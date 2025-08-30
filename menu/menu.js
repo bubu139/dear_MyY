@@ -338,3 +338,7 @@ const isNum = x => typeof x === 'number'
           x: 400,
           y: -100,
         });
+    
+  function button_2(){
+    window.location.href ='../gallery/gallery.html'
+  }
