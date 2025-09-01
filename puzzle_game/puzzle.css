@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
+    background-color: #F8F8F4;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    cursor: pointer;
+  }
+
+  #menu {
+    position: absolute;
+    list-style-type: none;
+    padding-left: 5px;
+    z-index: 1000;
+    /* 1 */
+    display: inline-block;
+    text-align: center;
+  }
+
+  #menu li {
+    margin: 2px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    background-color: #CD3135;
+  }
+
+  #menu li:hover {
+    background-color: #FCEDDA;
+  }
+
+  #forPuzzle {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F7C6DD;
+    overflow: hidden;
+  }
+
+  .polypiece {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  .moving {
+    transition-property: top, left;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+  }
+
+  .gameCanvas {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+  }
+  /* #next {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #F8F8F4;
+    font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
+    background-color: #990012;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  #next:hover {
+    background-color: #F04E35;
+  } */
+
+  #next {
+    position: absolute;
+    top: 400px;
+    left: 45%;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color : #F8F8F4;
+    /* font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif; */
+    background-color: #990012;
+    border: 1px solid #F8F8F4;
+    border-radius: 15px;
+    border-width: 2px;
+    overflow: hidden;
+    padding: 15px 2rem;
+    position: relative;  
+    place-items: center; 
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+  #next:disabled {
+    cursor: default;
+  }
+  
+  #next:-moz-focusring {
+    outline: auto;
+  }
+  
+  #next svg {
+    display: block;
+    vertical-align: middle;
+  }
+  
+  #next [hidden] {
+    display: none;
+  }
+
+  #next:before {
+    aspect-ratio: 1;
+    background: #F8F8F4;
+    border-radius: 50%;
+    content: "";
+    left: -100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) scale(1);
+    transform-origin: left center;
+    transition: transform 0.2s ease;
+    width: 100%;
+  }
+  #next:hover:before {
+    transform: translateY(-50%) scale(2);
+  }
+
+
+

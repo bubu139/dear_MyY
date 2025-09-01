@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>A Love Letter</title>
+    <link rel="icon" type="image/x-icon" href="https://i.loli.net/2021/06/03/lFg2V4WUcmkB98G.png">
+    <meta name="language" content="en-US">
+    <meta name="title" content="Student Sun">>
+    <link type="text/css" rel="stylesheet" href="book.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&family=Story+Script&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/8f62b2625c.js" crossorigin="anonymous"></script>
+<link rel="icon" type="image/x-icon" href="https://i.loli.net/2021/06/03/lFg2V4WUcmkB98G.png">
+</head>
+
+<body>
+  <div class ="btn-block">
+    <button id ="btn" class ="btn" onclick ="button_back()" ><i class="fa-solid fa-arrow-left"></i></button>
+</div>
+    <div class="reader-container">
+        <div class="controls">
+          <div class="control-group">
+            <label for="brightness">Brightness</label>
+            <input type="range" id="brightness" class="slider" min="0.4" max="1" step="0.1" value="1">
+          </div>
+          <div class="control-group">
+            <label for="font-size">Font Size</label>
+            <input type="range" id="font-size" class="slider" min="14" max="22" step="1" value="16">
+          </div>
+        </div>
+      
+        <div class="book-container" id="bookContainer">
+          <div class="page-indicator" id="pageIndicator">Page 1-2</div>
+          <div class="binding-gutter"></div>
+      
+          <div class="book" id="book">
+            <div class="book-spread" id="currentSpread">
+              <div class="page-left">
+                <div class="page-content" id="leftPageContent"></div>
+                <div class="page-number" id="leftPageNumber">1</div>
+              </div>
+              <div class="page-right">
+                <div class="page-content" id="rightPageContent"></div>
+                <div class="page-number" id="rightPageNumber">2</div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="click-areas">
+            <div class="click-area" id="prevArea"></div>
+            <div class="click-area" id="nextArea"></div>
+          </div>
+        </div>
+      
+        <div class="measurement-container" id="measurementContainer"></div>
+      </div>
+      <script src="book.js"></script>
+</body>
+
+</html>
