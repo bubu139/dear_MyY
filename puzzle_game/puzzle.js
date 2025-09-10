@@ -1152,7 +1152,7 @@ let loadFile;
 } //  // scope for loadFile
 
 function loadInitialFile() {
-  puzzle.srcImage.src = "20250828_185750099.jpg";
+  puzzle.srcImage.src = "https://github.com/bubu139/dear_MyY/blob/main/gallery/anh/20250828_185906551.jpeg?raw=true";
 }
 //-----------------------------------------------------------------------------
 function imageLoaded(puzzle) {
@@ -1470,5 +1470,6 @@ autoStart = isMiniature(); // used for nice miniature in CodePen
 
 loadInitialFile();
 requestAnimationFrame(animate);
+
 
 
